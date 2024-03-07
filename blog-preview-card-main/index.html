@@ -26,11 +26,12 @@
   <h3>Greg Hooper</h3>
   </div>
   </div>
-  <div class="attribution">
+  <footer><div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/dkhatod">DK</a>.
+  </div></footer>
 </body>
+
 </html>
 
 <style>
@@ -38,6 +39,7 @@
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
 
+  /* body centers everything in column and centers, puts fonts */
   body {
     background-color: hsl(47, 88%, 63%); 
     display: flex;
@@ -49,12 +51,13 @@
     height: 100vh;
     font-family: "Figtree", "sans-serif";
   }
+  /*card is flex w/set dimensions */
   .card {
     display: flex;
     
-    height: 300px;
-    width:225px;
-    padding:15px;
+    /*height: 300px;*/
+    width:220px;
+    padding:13px;
     
     background-color:white;
     flex-wrap:wrap;
@@ -63,9 +66,8 @@
     border-radius:10px;
     border: 1px solid hsl(0, 0%, 7%);
     
-    justify-content: space-between;
     box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-    /* size blur at 3rd, and for rgba last is opacity val */
+    /* shadow: size blur at 3rd, and for rgba last is opacity val */
   }
   #illustration {
     display:flex;
@@ -79,16 +81,21 @@
   h1 {
     font-size:16px;
   }
-  h2 {
+  h1:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+  }
+  h2 { /* line height for spacing */
     color: hsl(0, 3%, 65%);
     font-size: 11px;
     font-weight: normal;
     line-height: 14 px;
   }
-  h4 {
+  h4 { /* width prevents inline with tagblock */
     font-weight: normal;
     font-size:9px;
     width:100%;
+    margin-bottom:-2px;
   } 
   h3 {
     font-size: 10px;
@@ -104,24 +111,23 @@
 
   }
 
-  #pfp {
+  #pfp { /* horizontal flex */
     display:flex;
     flex-direction: horizontal;
     align-content: left;
     width: 20px; 
     height: 20px;
-    
-    
   }
 
-  .author {
-    flex-direction: horizontal;
-    flex-wrap: nowrap;
+  .author { /*inline-flex for same row, gap for spacing */
     display:inline-flex;
     justify-content: center;
     gap:5px;
     align-items: center;
-    
+    margin-bottom: -5px;
   }
-  
+  footer { /*position fixed sets it at bottom */
+    position:fixed;
+    bottom:5px;
+  }
 </style>
