@@ -9,20 +9,85 @@
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
   
+</head>
+<div class="main">
+<div class="rectangle">
+<img src="./images/image-qr-code.png" alt="QR Code" id="qr">
+<body>
+  <br>
+  <p1>Improve your front-end skills by building projects</p1>
+  <br><br>
+  <p2>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p2>
+  <br>
+  <br>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p5>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">DK</a>.</p5>
   </div>
 </body>
+</div>
+</div>
 </html>
+<style>
+  html {
+    background-color: lightblue;
+  }
+  .main {
+    
+    display:flex;
+    font-size: 11px; 
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .rectangle {
+    background-color: white;
+    flex-direction: column;
+    border-radius:20px;
+    flex-wrap:wrap;
+    
+
+    box-sizing: border-box;
+    /*border: 2px solid black;*/
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+
+    display: flex; /* Make .rectangle a flex container */
+  flex-direction: column; /* Arrange flex items vertically */
+  justify-content: space-between; /* Space flex items evenly */
+
+  /* this is so elements inside fit inside, and are aligned well */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add slight blurred shadow */
+  }
+  .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+  }
+  .attribution a { 
+     color: hsl(228, 45%, 44%);
+  }
+  #qr {
+    border-radius: 5%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+  }
+  p1 {
+    
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+
+  p2 {
+    font-size: 10px;
+    color: lightslategray;
+  }
+
+
+</style>
