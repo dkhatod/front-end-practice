@@ -9,26 +9,99 @@
   <title>Frontend Mentor | Blog preview card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
 <body>
+  <div class="card">
+    <img src="./assets/images/illustration-article.svg" alt="article illustration" id="illustration">
+  <h3 class="tagblock">Learning</h3>
 
-  Learning
+  <h4>Published 21 Dec 2023</h4>
 
-  Published 21 Dec 2023
+  <h1>HTML & CSS foundations</h1>
 
-  HTML & CSS foundations
+  <h2>These languages are the backbone of every website, defining structure, content, and presentation.</h2>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
+  <img src="./assets/images/image-avatar.webp" id="pfp">
+  <h3>Greg Hooper</h3>
   
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  body {
+    background-color: hsl(47, 88%, 63%); 
+    display: flex;
+    flex-direction: column;
+    font-size: 11px; 
+    text-align: left; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Figtree", "sans-serif";
+  }
+  .card {
+    display: block;
+    height: 300px;
+    width:225px;
+    padding:15px;
+    
+    background-color:white;
+    flex-wrap:wrap;
+    
+    box-sizing:border-box;
+    border-radius:10px;
+    border: 1px solid hsl(0, 0%, 7%);
+    
+    justify-content: space-between;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    /* size blur at 3rd, and for rgba last is opacity val */
+  }
+  #illustration {
+    display:flex;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    border-radius:10px;
+    /*width set to 100% is important for fitting*/
+  }
+
+  h1 {
+    font-size:16px;
+  }
+  h2 {
+    color: hsl(0, 3%, 65%);
+    font-size: 13px;
+    font-weight: normal;
+  }
+  h4 {
+    font-weight: normal;
+  } 
+  h3 {
+    font-size: 10px;
+
+  }
+  .tagblock{
+    width:50px;
+    background-color:hsl(47, 88%, 63%);
+    padding:5px;
+    text-align:center;
+    border-radius:3px;
+    margin-bottom: -3px;
+
+  }
+
+  .pfp {
+    
+  }
+  
+</style>
